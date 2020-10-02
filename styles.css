@@ -1,177 +1,113 @@
-/* Quick Drop Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.center{
+html, body {
+height: 100%
+}
+
+body {
+background-image: url("images/waves.jpg");
+/*height: 100%;*/
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+background-attachment: fixed;
+}
+
+/* EMERGENCY COLUMN CENTERER */
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/* HEADER / APPS SECTION STYLES */
+
+.header-apps {
+  font-family: Roboto, sans-serif;
+  color: white;
+  letter-spacing: 0.5rem;
   text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.header-apps img {
+  display: block;
   margin: 0 auto;
 }
 
-/* Basic Styles */
-
-body{
-  background-image: url("images/waves.jpg") ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 99%;
+.clock {
+font-size: 3.5rem;
 }
 
-/* Background Styles */
-
-.background{
-height: 35px;
-width: 125px;
-border-radius: 4px;
-border-style: solid;
-border-color: black;
-border-width: 1px;
-position: fixed;
-bottom: 0;
-right: 0;
-background-color: #407088;
-background-color: rgba(64, 112, 136, 0.5);
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
-
-
-.header{
-  position: relative;
-  left: 73%;
-  margin-top: 10px;
-  text-align: center;
-  background-color: #407088;
-  background-color: rgba(64, 112, 136, 0.5);
+.weather {
+font-size: 1.5rem;
 }
 
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.weather-item {
+  display: inline-flex;
 }
 
-.card{
-  width: 800px;
-  height: 410px;
-  background-color: #407088;
-  background-color: rgba(64, 112, 136, 0.5);
-  margin: 30px;
-  margin-top: 5%;
-  display: inline-block;
-  text-align: center;
-  border-radius: 14px;
-}
-
-.water{
-  position: fixed;
-  bottom: 0;
-  left: 34%;
-  color: rgba(0, 0, 0, 0.5);
-  letter-spacing: 1rem;
-  text-align: center;
-  cursor: default;
-}
-
-/* TAB STYLES */
+/* TABS FUNCTIONALITY */
 
 [data-tab-target]{
-  display: inline-block;
-  text-align: center;
+display: inline-block;
+text-align: center;
 }
 
 [data-tab-content]{
-  display: none;
-  width: inherit;
-  height: inherit;
+display: none;
+width: inherit;
+height: inherit;
 }
 
 .active[data-tab-content]{
-  display: block;
+display: block;
 }
 
 .tabs {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-}
-
-.tab {
+  text-align: center;
+  font-size: 2rem;
   cursor: pointer;
-  padding: 10px;
+  /* border-bottom: 1px solid black; */
+  color: #000;
+  margin-bottom: 25px;
 }
 
-.active.tab {
-  background-color: #6bb6db;
-  background-color: rgba(107, 182, 219, 0.5);
-}
+/* INNER BOX STYLES */
 
-.tab:hover {
-  background-color: #33596b;
-  background-color: rgba(51, 89, 107, 0.5);
-}
-
-.tab-content {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.tab-header{
-  letter-spacing: 0.5rem;
-}
-
-.color-pro{
-  position: absolute;
-  float: left;
-  background-color: #6bb6db;
-  height: 45%;
-  width: 5px;
-}
-
-.color-soc{
-  position: absolute;
-  float: left;
-  background-color: #de4463;
-  height: 45%;
-  width: 5px;
-}
-
-.color-fun{
-  position: absolute;
-  float: left;
-  background-color: #a0c1b8;
-  height: 45%;
-  width: 5px;
+.box {
+  height: 55vh;
+  background-color: #407088;
+  background-color: rgba(64, 112, 136, 0.3);
+  border-radius: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 .tab-links {
-  text-decoration: none!important;
-  color: black;
-  display: block;
-
+  width: 50px;
+  margin: 0 10px 5px 10px;
 }
 
-.pro-links:hover {
-  color: #6bb6db;
+/* WATER FEATURE STYLES */
+
+ .water {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Times New Roman', serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2rem;
+  cursor: default;
+  padding-top: 15px;
 }
-
-.soc-links:hover {
-  color: #de4463;
-}
-
-.fun-links:hover {
-  color: #a0c1b8;
-}
-
-/* CLOCK STYLES */
-
-#clock {
-  font-family: 'Roboto', sans-serif;
-
-  color: #FFF;
-  font-size: 2rem;
-  letter-spacing: 1rem;
-}
-
-/* WEATHER WIDGET STYLES */
