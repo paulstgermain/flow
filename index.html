@@ -1,72 +1,78 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta property="og:image" content="images/Flow.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Flow | Custom Startpage" />
-  <meta property="og:description" content="BE LIKE WATER" />
-  <meta property="og:url" content="https://paulstgermain.github.io/flow/" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <title>Flow | Custom Startpage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <title>Flow | Built on Bootstrap</title>
+
 </head>
 
-<body onload="myClock()">
-  <div class="center">
-    <div class="card">
+<body onLoad="myClock()">
+  <div class="container">
 
-      <div id="clock">
-        &nbsp;
-      </div>
-
-      <ul class="tabs">
-        <li data-tab-target="#productive" class="active tab">Be Productive</li>
-        <li data-tab-target="#social" class="tab">Be Social</li>
-        <li data-tab-target="#fun" class="tab">Be Fun</li>
-      </ul>
-
-      <div class="tab-content">
-        <div id="productive" data-tab-content class="active">
-          <h3 class="tab-header">PRODUCTIVE</h3>
-          <div class="color-pro">&nbsp;</div>
-          <a href="https://mail.google.com/mail/u/0/" class="tab-links pro-links">Email</a>
-          <a href="https://rainymood.com/" class="tab-links pro-links">Rainy Mood</a>
-          <a href="" class="tab-links pro-links">LINK</a>
-          <a href="" class="tab-links pro-links">LINK</a>
-          <a href="" class="tab-links pro-links">LINK</a>
-          <h3 class="tab-header">LEARN</h3>
-          <a href="https://www.udemy.com/" class="tab-links pro-links">Udemy</a>
-          <a href="https://csx.codesmith.io/home" class="tab-links pro-links">CSX</a>
-          <a href="https://www.codewars.com/dashboard" class="tab-links pro-links">Codewars</a>
+    <div class="row">
+      <div class="col-12 header-apps">
+        <div id="clock" class="clock">
+          &nbsp;
         </div>
-        <div id="social" data-tab-content>
-          <h3 class="tab-header">SOCIAL</h3>
-          <div class="color-soc">&nbsp;</div>
-          <a href="https://www.facebook.com/" class="tab-links soc-links">Facebook</a>
-          <a href="https://www.linkedin.com/" class="tab-links soc-links">LinkedIn</a>
-          <a href="" class="tab-links soc-links">LINK</a>
-          <a href="" class="tab-links soc-links">LINK</a>
-          <a href="" class="tab-links soc-links">LINK</a>
-        </div>
-        <div id="fun" data-tab-content>
-          <h3 class="tab-header">FUN</h3>
-          <div class="color-fun">&nbsp;</div>
-          <a href="https://www.youtube.com/" class="tab-links fun-links">Youtube</a>
-          <a href="https://netflix.com" class="tab-links fun-links">Netflix</a>
-          <a href="https://waitbutwhy.com/" class="tab-links fun-links">Wait, But Why?</a>
-          <a href="" class="tab-links fun-links">LINK</a>
-          <a href="" class="tab-links fun-links">LINK</a>
+        <div id="weather">
+          <img src="" class="icon" />
+          <p class="temp weather-item">&nbsp;</p>
+          <p class="desc weather-item">&nbsp;</p>
+
         </div>
       </div>
-
     </div>
-  </div>
 
-  <h1 class="water">BE LIKE WATER</h1>
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+        <div class="box text-center">
+            <ul class="tabs">
+              <li data-tab-target="#productive" class="active tabs">Work</li>
+              <li data-tab-target="#social" class="tabs">Social</li>
+              <li data-tab-target="#fun" class="tabs">Fun</li>
+            </ul>
+          <div class="tab-content">
+            <div id="productive" data-tab-content class="active work">
+              <a href="https://mail.google.com/mail/u/0/"><img src="images/mail-flow.png" class="tab-links" /></a>
+              <a href="https://rainymood.com/"><img src="images/rainymood-flow.png" class="tab-links" /></a>
+              <a href="https://upwork.com/"><img src="images/upwork-flow.png" class="tab-links" /></a>
+              <br><br>
+              <a href="https://udemy.com"><img src="images/udemy-flow.png" class="tab-links" /></a>
+              <a href="https://csx.codesmith.io/home"><img src="images/csx-flow.png" class="tab-links" /></a>
+              <a href="https://www.codewars.com/dashboard"><img src="images/codewars-flow.png" class="tab-links" /></a>
+            </div>
+            <div id="social" class="social" data-tab-content>
+              <a href="https://www.facebook.com/"><img src="images/facebook-flow.png" class="tab-links" /></a>
+              <a href="https://www.instagram.com/"><img src="images/instagram-flow.png" class="tab-links" /></a>
+              <a href="https://www.linkedin.com/"><img src="images/linkedin-flow.png" class="tab-links" /></a>
+              <a href="https://www.twitter.com/"><img src="images/twitter-flow.png" class="tab-links" /></a>
+            </div>
+            <div id="fun" class="fun" data-tab-content>
+              <a href="https://youtube.com/"><img src="images/youtube-flow.png" class="tab-links" /></a>
+              <a href="https://waitbutwhy.com/"><img src="images/waitbutwhy-flow.png" class="tab-links" /></a>
+              <a href="https://alistapart.com/"><img src="images/alistapart-flow.png" class="tab-links" /></a>
+              <a href="https://netflix.com/"><img src="images/netflix-flow.png" class="tab-links" /></a>
+            </div>
+          </div>
+        </div>
 
-  <!-- SCRIPTS -->
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12" style="text-align: center">
+        <h1 class="water">BE LIKE WATER</h1>
+      </div>
+      </div>
+    </div>
 
 
 
